@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Kristi&family=Permanent+Marker&family=Square+Peg&display=swap');
+
+
+:root{
+    --font:'Square Peg', cursive;
+    --font2:'Kristi', cursive;
+    --font3:'Permanent Marker', cursive;
+    --terezi: #008282;
+    --gideon: #eb7d5c;
+}

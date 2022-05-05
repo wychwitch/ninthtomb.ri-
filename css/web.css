@@ -3,15 +3,19 @@
 *{box-sizing: border-box;}
 
 body{
+    height: 95vh;
+    width: 95vw;
+    margin: auto;
     background-color: black;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+    grid-template-rows: auto;
+    grid-template-areas: "header header header"
+                         "nav main extra"
+                         "nav main extra"
+                         "nav main extra"
+                         "footer footer footer";
 }
-main{
-    display: flex;
-    flex-direction: row wrap;
-    align-items: center;
-    justify-content: center;
-}
-
 section{
     display: flex;
     flex-direction: column;
@@ -23,8 +27,39 @@ p{
     margin:0
 }
 
+main{
+    grid-area: main;
+    background-color: gray;
+}
+header{
+    grid-area: header;
+    background-color: aquamarine;
+}
+nav{
+    grid-area: nav;
+    color: white;
+}
+nav li{
+    font-size: 3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+aside{
+    grid-area: extra;
+    background-color: purple;
+}
+main a[href="badtime.html"]{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+    color: red;
+}
 img{
-    width:100%;
+    width:50%;
+}
+footer{
+    grid-area: footer;
+    background-color: yellow;
 }
 
 audio{
@@ -79,13 +114,13 @@ label[for="pesterButton"]:hover{
 
 ul{
     margin:0;
-    background-color: #efefef;
+    background-color: hsl(200, 80%, 50%);
+    height: 100%;
     text-align: left;
 }
 
 ul li{
     list-style: none;
-    display: none;
     font-weight: bold;
 }
 

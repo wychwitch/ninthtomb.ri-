@@ -3,156 +3,65 @@
 *{box-sizing: border-box;}
 
 body{
-    height: 95vh;
-    width: 95vw;
-    margin: auto;
-    background-color: black;
-    display: grid;
-    grid-template-columns: 0.5fr 2fr 0.5fr;
-    grid-template-rows: auto;
-    grid-template-areas: "header header header"
-                         "nav main extra"
-                         "nav main extra"
-                         "nav main extra"
-                         "footer footer footer";
-}
-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 20%;
-    height: auto;
-}
-p{
-    margin:0
+    font-family: var(--font3);
 }
 
 main{
-    grid-area: main;
-    background-color: gray;
-}
-header{
-    grid-area: header;
-    background-color: aquamarine;
-}
-nav{
-    grid-area: nav;
-    color: white;
-}
-nav li{
-    font-size: 3em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-aside{
-    grid-area: extra;
-    background-color: purple;
-}
-main a[href="badtime.html"]{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 1em;
-    color: red;
-}
-img{
-    width:50%;
-}
-footer{
-    grid-area: footer;
-    background-color: yellow;
+    flex-direction: column;
 }
 
-audio{
+section{
+    width: 80%;
+    margin: auto;
+}
+
+
+
+a{
+    width: fit-content;
+}
+
+section img{
     width: 100%;
-    height: auto;
+    margin: auto;
 }
 
-.flip{
-    transform: rotateY(180deg);
+nav{
+    border-bottom: 5px red solid;
 }
 
-h1,p{
-    font-family: var(--font);
-    color: white;
-    font-size: 3em;
-}
-
-.pester{
-    border: 1px gray dashed;
-    text-align: center;
-    background-color: #efefef;
-    padding: 2px;
-}
-
-#pesterButton{
+#navMenuCheck{
     display: none;
 }
-
-label[for="pesterButton"]{
-    
-    background-color:#e9e9ed;
-    border: 1px gray solid;
-    font-family: "courier-std", courier, monospace;
-    font-weight: bold;
-    padding:1px 4px;
-    font-size: 1em;
-    border-radius: 2px;
+nav ul{
+    padding: 0;
+}
+nav li{
+    list-style: none;
 }
 
-label[for="pesterButton"]:hover{
-    cursor: pointer;
-}
-
-#pesterButton:checked + ul li{
+nav li a{
+    width: 100%;
+    text-align: center;
     display: block;
+}   
+
+nav li:nth-of-type(even) a{
+    background-color: var(--terezi);
 }
 
-#pesterButton:checked + ul{
-    padding: 2em;
+nav li:nth-of-type(odd) a{
+    background-color: var(--gideon);
 }
-
 
 ul{
-    margin:0;
-    background-color: hsl(200, 80%, 50%);
-    height: 100%;
-    text-align: left;
+    display:none;
+    text-align: center;
+
 }
 
-ul li{
-    list-style: none;
-    font-weight: bold;
-}
-
-.gideon, .terezi{
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.terezi{
-    color: var(--terezi);
-}
-
-.gideon{
-    color: var(--gideon);
-}
-
-.sin{
-    font-family: var(--font);
-    text-align: right;
-    font-size: 1.3em;
-}
-
-.bad{
-    font-family: var(--font3);
-    color: hsl(200, 80%, 50%);
-    font-style: italic;
-}
-
-main section:first-of-type{
-    align-self: flex-start;
-}
-
-main section:last-of-type{
-    align-self: flex-end;
-    text-align: right;
+#navMenuCheck:checked + ul{
+    display: block;
+    width: 100%;
 }

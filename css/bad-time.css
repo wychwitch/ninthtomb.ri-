@@ -83,7 +83,11 @@ blockquote{
 }
 
 h1{
-    font-size: 15rem;
+    font-size: 8rem;
+    margin: 0;
+}
+h2{
+    font-size: 4rem;
     margin: 0;
 }
 

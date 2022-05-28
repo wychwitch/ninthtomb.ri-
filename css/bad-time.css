@@ -8,8 +8,22 @@ blockquote#pesterlog,.dave,.john,.rose,.jade,.dirk,.davesprite,.roxy,.jasperspri
 
 #pesterlog p {
     margin: 1rem 0;
-    		
+    font-size: 70%;
+    text-indent: 0;
+    word-break: normal;
 }
+#pesterlog p.terezi{
+    word-break: break-all;
+}
+p#log{
+    font-size: 50%;
+}
+p#log span{
+    font-size: 100%;
+}
+
+
+
 
 .hidden{
     display: none;
@@ -83,11 +97,11 @@ blockquote{
 }
 
 h1{
-    font-size: 7rem;
+    font-size: 6rem;
     margin: 0;
 }
 h2{
-    font-size: 4rem;
+    font-size: 3rem;
     margin: 0;
 }
 

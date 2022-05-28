@@ -3,6 +3,7 @@
 @import url('http://fonts.cdnfonts.com/css/graveyard-brk');
 @import url('http://fonts.cdnfonts.com/css/black-bone-script');
 @import url('http://fonts.cdnfonts.com/css/skullmanator');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 
 :root{
     --font:'El Messiri', sans-serif;
@@ -10,7 +11,7 @@
     --font3:'Permanent Marker', cursive;
     --header2:'Black Bone Script', sans-serif;
     --header3:'Skullmanator', sans-serif;
-    --header: 'Graveyard BRK', sans-serif;
+    --header: 'Rock Salt', cursive;
 }
 
 *{box-sizing: border-box;}

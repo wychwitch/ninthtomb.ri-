@@ -99,10 +99,12 @@ blockquote{
 h1{
     font-size: 6rem;
     margin: 0;
+    text-align: center;
 }
 h2{
     font-size: 3rem;
     margin: 0;
+    text-align: center;
 }
 
 
